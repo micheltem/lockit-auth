@@ -45,7 +45,13 @@ var Lockit = module.exports = function(config) {
 
   // create db adapter only once and pass it to modules
   var db = lockitUtils.getDatabase(config);
-  var adapter = require(db.adapter)(config);
+  // MT: append -auth to load the custom adapter if we have couchdb
+  if (db.adapter === "couchdb") {
+    var adapter = require(db.adapter + "-auth")(config);
+  }
+  else {
+    var adapter = require(db.adapter)(config);
+  }
 
   // load all required modules
   var signup = new Signup(config, adapter);
