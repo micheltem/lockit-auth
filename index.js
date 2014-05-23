@@ -46,7 +46,7 @@ var Lockit = module.exports = function(config) {
   // create db adapter only once and pass it to modules
   var db = lockitUtils.getDatabase(config);
   // MT: append -auth to load the custom adapter if we have couchdb
-  if (db.adapter.indexOf("couchdb") > -1 {
+  if (db.adapter.indexOf("couchdb") > -1) {
     var adapter = require(db.adapter + "-auth")(config);
   }
   else {
