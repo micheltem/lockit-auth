@@ -1,7 +1,7 @@
 {
-  "name": "lockit",
+  "name": "lockit-auth",
   "version": "1.0.0",
-  "description": "Authentication solution for Express",
+  "description": "Authentication solution for Express, adds in cookie authentication for couch",
   "main": "index.js",
   "scripts": {
     "test": "grunt"
@@ -16,14 +16,14 @@
     "authentication"
   ],
   "author": {
-    "name": "Mirco Zeiss",
-    "email": "mirco.zeiss@gmail.com",
-    "twitter": "zeMirco"
+    "name": "Michel Temmerman",
+    "email": "micheltem@gmail.com",
+    "twitter": "micheltem"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeMirco/lockit"
+    "url": "https://github.com/micheltem/lockit-auth"
   },
   "dependencies": {
     "debug": "~0.7.4",
@@ -46,7 +46,7 @@
     "grunt-mocha-test": "~0.8.1",
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
-    "lockit-couchdb-adapter": "0.4.1",
+    "lockit-couchdb-adapter-auth": "0.4.x",
     "static-favicon": "~1.0.0",
     "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
