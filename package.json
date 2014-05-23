@@ -1,6 +1,6 @@
 {
   "name": "lockit-auth",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Authentication solution for Express, adds in cookie authentication for couch",
   "main": "index.js",
   "scripts": {
