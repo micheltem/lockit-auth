@@ -28,8 +28,8 @@
   "dependencies": {
     "debug": "~0.7.4",
     "nano": "~4.6.1",
-    "lockit-signup": "1.0.0",
-    "lockit-login-auth": "1.0.0",
+    "lockit-signup": "1.0.x",
+    "lockit-login-auth": "1.1.x",
     "lockit-forgot-password": "1.0.0",
     "lockit-delete-account": "1.0.0",
     "lockit-utils": "0.3.0",
